@@ -16,3 +16,22 @@ LCD Display (optional for local display)
 Internet Access (via Wi-Fi)
 Cloud Integration Platform (Google Cloud, AWS, or ThingSpeak)
 
+# Step-by-Step Plan:
+1. Hardware Setup with Raspberry Pi Zero:
+Ultrasonic Sensor:
+
+Connections:
+VCC → 3.3V or 5V
+GND → Ground
+Trig → GPIO Pin (e.g., GPIO 17)
+Echo → GPIO Pin (e.g., GPIO 27)
+IR Sensor:
+
+Connections:
+VCC → 3.3V
+GND → Ground
+OUT → GPIO Pin (e.g., GPIO 22)
+LCD (Optional for local display):
+
+Can use I2C or 16x2 LCD to show real-time status of sensors.
+
