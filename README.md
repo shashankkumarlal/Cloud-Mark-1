@@ -35,3 +35,62 @@ LCD (Optional for local display):
 
 Can use I2C or 16x2 LCD to show real-time status of sensors.
 
+# Python Code for Sensor Data Collection:
+
+import RPi.GPIO as GPIO
+import time
+import requests
+
+#GPIO pin setup
+GPIO.setmode(GPIO.BCM)
+TRIG = 17
+ECHO = 27
+IR_SENSOR_PIN = 22
+
+GPIO.setup(TRIG, GPIO.OUT)
+GPIO.setup(ECHO, GPIO.IN)
+GPIO.setup(IR_SENSOR_PIN, GPIO.IN)
+
+#Function to read distance from ultrasonic sensor
+def get_distance():
+    GPIO.output(TRIG, GPIO.LOW)
+    time.sleep(2)
+    GPIO.output(TRIG, GPIO.HIGH)
+    time.sleep(0.00001)
+    GPIO.output(TRIG, GPIO.LOW)
+
+    while GPIO.input(ECHO) == 0:
+        pulse_start = time.time()
+
+    while GPIO.input(ECHO) == 1:
+        pulse_end = time.time()
+
+    pulse_duration = pulse_end - pulse_start
+    distance = pulse_duration * 17150
+    return round(distance, 2)
+
+#Function to check IR sensor state
+def get_ir_state():
+    return GPIO.input(IR_SENSOR_PIN)
+
+#Main loop
+while True:
+    distance = get_distance()
+    ir_state = get_ir_state()
+    
+    print(f"Distance: {distance} cm")
+    print(f"IR Sensor State: {'Detected' if ir_state else 'Not Detected'}")
+
+    # Send data to cloud (ThingSpeak or IFTTT)
+    data = {
+        'field1': distance,
+        'field2': ir_state
+    }
+    url = 'https://api.thingspeak.com/update?api_key=YOUR_API_KEY'
+    response = requests.get(url, params=data)
+
+    if response.status_code == 200:
+        print("Data sent to ThingSpeak successfully!")
+
+    time.sleep(5)
+
