@@ -94,3 +94,7 @@ while True:
 
     time.sleep(5)
 
+# Explanation:
+The ultrasonic sensor measures the distance to nearby obstacles.
+The IR sensor detects obstacles or humans.
+Data is sent to the cloud platform (ThingSpeak in this case) every 5 seconds.
