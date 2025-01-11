@@ -98,3 +98,21 @@ while True:
 The ultrasonic sensor measures the distance to nearby obstacles.
 The IR sensor detects obstacles or humans.
 Data is sent to the cloud platform (ThingSpeak in this case) every 5 seconds.
+
+# Cloud Integration:
+Choose Cloud Platform:
+
+Option 1: ThingSpeak (for simplicity):
+
+Create a free account on ThingSpeak.
+Create a new channel with two fields: one for distance and one for IR sensor state.
+Use the Write API Key provided by ThingSpeak to send sensor data from the Raspberry Pi.
+Option 2: IFTTT for Notifications:
+
+Set up an account on IFTTT.
+Create an applet where the Webhooks service sends data from your Raspberry Pi to trigger a notification on your phone.
+Use ThingSpeak as the service to send the distance and IR sensor data.
+Option 3: Google Cloud Functions (for AI/ML processing):
+
+You can send data to Google Cloud and use a basic AI/ML model (like a classification model) to process the sensor data.
+Create a Google Cloud Function that takes the sensor data and processes it to classify whether an object is an obstacle, a human, or safe.
