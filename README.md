@@ -116,3 +116,19 @@ Option 3: Google Cloud Functions (for AI/ML processing):
 
 You can send data to Google Cloud and use a basic AI/ML model (like a classification model) to process the sensor data.
 Create a Google Cloud Function that takes the sensor data and processes it to classify whether an object is an obstacle, a human, or safe.
+
+# Cloud AI/ML Processing (Optional but Recommended):
+Here you can use cloud AI tools to classify the data and provide meaningful results.
+
+Step 1: Train a Basic AI Model:
+
+Use a simple machine learning model (like Logistic Regression, Decision Tree, or Random Forest) to classify the sensor data.
+For example, if the distance is below 10 cm and the IR sensor detects an object, classify it as an obstacle.
+Step 2: Deploy AI on Google Cloud or AWS Lambda:
+
+Train the model on Google Colab or AWS SageMaker using a small dataset.
+Deploy it as a cloud function (Google Cloud Functions or AWS Lambda).
+Step 3: Real-time Prediction:
+
+Once the Raspberry Pi sends the data to the cloud, the cloud function can process it and classify the object (e.g., "object ahead," "human detected").
+Send the classification result back to the Raspberry Pi or to IFTTT for notification.
