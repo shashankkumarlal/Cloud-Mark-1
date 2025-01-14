@@ -132,3 +132,15 @@ Step 3: Real-time Prediction:
 
 Once the Raspberry Pi sends the data to the cloud, the cloud function can process it and classify the object (e.g., "object ahead," "human detected").
 Send the classification result back to the Raspberry Pi or to IFTTT for notification.
+
+# Mobile Notification (Using IFTTT):
+You can trigger a notification on a mobile phone using IFTTT:
+
+Create an IFTTT applet:
+
+Set the Webhooks service to listen for incoming HTTP requests.
+Configure the action to send a notification (e.g., "Object detected ahead" or "Human detected").
+Setup Webhooks on ThingSpeak:
+
+Use the Webhooks feature on ThingSpeak to call the IFTTT applet when certain conditions (like proximity of an object) are met.
+
