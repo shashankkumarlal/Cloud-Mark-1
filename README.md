@@ -144,3 +144,11 @@ Setup Webhooks on ThingSpeak:
 
 Use the Webhooks feature on ThingSpeak to call the IFTTT applet when certain conditions (like proximity of an object) are met.
 
+# Final Steps:
+Test the Setup:
+
+After running the Python code on the Raspberry Pi, observe the data being sent to ThingSpeak.
+If you're using IFTTT, check for mobile notifications when an object or human is detected.
+Refine and Add AI Later:
+
+Once everything works, you can refine the AI portion in the cloud by integrating more sophisticated models.
