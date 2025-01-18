@@ -157,5 +157,5 @@ Once everything works, you can refine the AI portion in the cloud by integrating
 Raspberry Pi acts as the interface for sensor data collection.
 Cloud Platform (ThingSpeak or IFTTT) handles data processing and triggering notifications.
 AI/ML in the Cloud can be added later for classification and decision-making.
-This project creates a "Smart Assistant for the Visually Impaired" that can notify users about obstacles in their environment, helping them navigate more safely and independently.
+This project creates a "Smart Assistant for the Visually Impaired" that can notify users about obstacles in their environment, helping them navigate more safely and independently
 
