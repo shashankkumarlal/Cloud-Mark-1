@@ -1,0 +1,27 @@
+CONTINUED AFTER STEP 2
+#Step 3:  Step-by-Step Guide to Creating an AWS Budget Alert
+Step 3.1: Open the AWS Billing Dashboard
+Go to the AWS Console → Click here
+In the top search bar, type → Billing Dashboard
+Click on Billing and Cost Management
+Step 3.2: Navigate to AWS Budgets
+In the left-hand sidebar, find and click Budgets (under Billing and Cost Management)
+On the Budgets page, click the blue "Create a Budget" button
+Step 3.3: Choose Budget Type
+Budget Type: Select Cost Budget (first option)
+Click Next
+Step 3.4: Define Your Budget Details
+Budget Name: Enter → Cloud Budget Alert
+Period: Select Monthly
+Budget Amount: Set a limit, e.g.,
+$0.01 (USD) if you're using USD
+Click Next
+Step 3.5: Set Up Budget Notifications
+Threshold Type: Choose Actual Cost
+Threshold Percentage: Enter 100% (so you get an alert when the cost reaches ₹100 or $1)
+Notification Recipient: Enter your email ID
+Click Next
+Step 3.6: Review & Create Budget
+Review all details
+Click Create Budget
+✅ Done! AWS will now send you an email alert if your spending exceeds $0.01
