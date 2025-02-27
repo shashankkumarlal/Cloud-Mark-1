@@ -43,6 +43,13 @@ Choose the Free Basic Plan (it’s free).
 Click “Continue”.
 ✅ Congratulations! Your AWS account is now created! 🎉
 
+#Step 2: Sign In to AWS Console
+Go to AWS Console.
+Click “Sign in”.
+Select "Root user" and enter your email & password.
+Click "Sign In".
+✅ You are now inside the AWS Management Console. 🎉
+
 
 
 
