@@ -8,11 +8,11 @@ Set up Security Groups for controlled inbound/outbound traffic.
 Track AWS Billing & Free Tier Usage to avoid unexpected costs.
 
 ![EC2 CloudWatch Monitoring](screenshots/EC2.1.png)
-![CPU And MEMORY utilization of instance of EX2 On Cloudwatch](screenshots/CPU\And\MEMORY\utilization\of\instance\of\EX2\On\Cloudwatch.png).
-![EC2 Storage Monitoring](screenshots/EC2\Storage.png)
-![Billing Cost Breakdown](screenshots/Billing\Cost\Breakdown.png)
-![Billing Free Tier](screenshots/Billing\Free\Tier.png)
-![IAM Users and Policies](screenshots/IAM\users\and\policies.png)
+![CPU And MEMORY utilization of instance of EX2 On Cloudwatch](screenshots/CPU\And\MEMORY\utilization\of\instance\of\EX2\On\Cloudwatch.jpg).
+![EC2 Storage Monitoring](screenshots/EC2\Storage.jpg)
+![Billing Cost Breakdown](screenshots/Billing\Cost\Breakdown.jpg)
+![Billing Free Tier](screenshots/Billing\Free\Tier.jpg)
+![IAM Users and Policies](screenshots/IAM\users\and\policies.jpg)
 
 ##Technologies Used
 Amazon EC2 (t2.micro) – Free tier instance for testing.
